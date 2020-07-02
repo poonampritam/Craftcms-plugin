@@ -39,16 +39,11 @@
         "handle": "websitetoolboxforums",
         "developer": "Website Toolbox",
         "developerUrl": "http://websitetoolbox.com",
-        "documentationUrl": "???",
-        "changelogUrl": "???",
+        "documentationUrl": "https://www.websitetoolbox.com/documentation",
+        "changelogUrl": "https://www.websitetoolbox.com/documentation",
         "class": "websitetoolbox\\websitetoolboxforums\\Websitetoolboxforums"
     },
      "minimum-stability": "dev",
   "prefer-stable": true,
-  "repositories": [
-    {
-      "type": "path",
-      "url": "../my-plugin"
-    }
-  ]
+   
 }
