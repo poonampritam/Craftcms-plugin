@@ -35,6 +35,7 @@
         }
     },
     "extra": {
+         "hasCpSettings": true,
         "name": "websitetoolboxforums",
         "handle": "websitetoolboxforums",
         "developer": "Website Toolbox",
@@ -45,5 +46,10 @@
     },
      "minimum-stability": "dev",
   "prefer-stable": true
-   
+    "repositories": [
+    {
+      "type": "path",
+      "url": "https://github.com/poonampritam/Craftcms-plugin"
+    }
+  ]
 }
