@@ -44,6 +44,6 @@
         "class": "websitetoolbox\\websitetoolboxforums\\Websitetoolboxforums"
     },
      "minimum-stability": "dev",
-  "prefer-stable": true,
+  "prefer-stable": true
    
 }
