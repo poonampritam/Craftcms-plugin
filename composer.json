@@ -49,7 +49,7 @@
     "repositories": [
     {
       "type": "path",
-      "url": "https://github.com/poonampritam/Craftcms-plugin"
+      "url": "c://xampp2/htdocs/websitetoolboxforums"
     }
   ]
 }
