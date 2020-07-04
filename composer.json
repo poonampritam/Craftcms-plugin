@@ -46,7 +46,7 @@
         "class": "websitetoolbox\\websitetoolboxforums\\Websitetoolboxforums",
         "components": {
             "sso": "websitetoolbox\\websitetoolboxforums\\services\\Sso"
-        },
+        }
     },
      "minimum-stability": "dev",
   "prefer-stable": true,
