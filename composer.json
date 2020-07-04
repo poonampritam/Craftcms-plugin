@@ -39,10 +39,14 @@
         "name": "websitetoolboxforums",
         "handle": "websitetoolboxforums",
         "developer": "Website Toolbox",
+        "hasCpSection": false,
         "developerUrl": "http://websitetoolbox.com",
         "documentationUrl": "https://www.websitetoolbox.com/documentation1",
         "changelogUrl": "https://www.websitetoolbox.com/documentation1",
-        "class": "websitetoolbox\\websitetoolboxforums\\Websitetoolboxforums"
+        "class": "websitetoolbox\\websitetoolboxforums\\Websitetoolboxforums",
+        "components": {
+            "sso": "websitetoolbox\\websitetoolboxforums\\services\\Sso"
+        },
     },
      "minimum-stability": "dev",
   "prefer-stable": true,

@@ -4,15 +4,48 @@
  *
  * Websitetoolboxforums Settings.twig
  *
- * @author    Websitetoolbox
- * @copyright Copyright (c) 2019 nystudio107
+ * @author    websitetoolbox
+ * @copyright Copyright (c) 2019 websitetoolbox
  * @link      https://websitetoolbox.com/
  * @package   Websitetoolboxforums
  * @since     3.0.0
  */
 #}
 
- 
-<p>Please see <a href="https://docs.vanillaforums.com/help/sso/jsconnect/" target="_blank">jsConnect Single Sign-On (SSO) </a> for details on how to set up Websitetoolbox Forums to use SSO</p>
+{% import "_includes/forms" as forms %}
 
- 
+{% do view.registerAssetBundle("websitetoolbox\\websitetoolboxforums\\assetbundles\\websitetoolboxforums\\WebsitetoolboxforumsAsset") %}
+
+{% macro configWarning(setting, file="websitetoolboxforums") -%}
+    {%- set configArray = craft.app.config.getConfigFromFile(file) -%}
+    {%- if configArray[setting] is defined -%}
+        {{- "This is being overridden by the `#{setting}` setting in the `config/#{file}.php` file."|t("websitetoolboxforums")|raw }}
+    {%- else -%}
+        {{ false }}
+    {%- endif -%}
+{%- endmacro %}
+{% from _self import configWarning %}
+
+    {{ forms.textField({
+        "label": "Forum Username"|t("websitetoolboxforums"),
+        "id": "forumUsername",
+        "name": "forumUsername",
+        "value": settings.forumUsername,
+     }) 
+    }}
+ {{ forms.textField({
+        "label": "Forum Password"|t("websitetoolboxforums"),
+        "id": "forumPassword",
+        "name": "forumPassword",
+        "value": settings.forumPassword,
+     }) }}
+   {{ forms.checkboxField({
+		label: "Embedded"|t('app'),
+		id: 'forumEmbedded',
+		name: 'forumEmbedded',
+		checked: settings.forumEmbedded,
+		}) 
+	}}
+
+ <input type="hidden" name="redirect" value="websitetoolboxforums/sso/">
+

@@ -9,7 +9,7 @@
  */
 
 namespace websitetoolbox\websitetoolboxforums\controllers;
-
+echo "ooo";exit;
 use websitetoolbox\websitetoolboxforums\Websitetoolboxforums;
 
 use Craft;

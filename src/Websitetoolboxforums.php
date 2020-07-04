@@ -1,8 +1,8 @@
 <?php
 /**
- * Vanillaforums plugin for Craft CMS 3.x
+ * Websitetoolboxforums plugin for Craft CMS 3.x
  *
- * Single Sign On plugin for VanillaForums/jsConnect and CraftCMS
+ * Single Sign On plugin for WebsitetoolboxForums/jsConnect and CraftCMS
  *
  * @link      https://websitetoolbox.com/
  * @copyright Copyright (c) 2019 websitetoolbox
@@ -11,7 +11,7 @@
 namespace websitetoolbox\websitetoolboxforums;
 
 use websitetoolbox\websitetoolboxforums\services\Sso as SsoService;
-use websitetoolbox\websitetoolboxforums\variables\VanillaforumsVariable;
+use websitetoolbox\websitetoolboxforums\variables\WebsitetoolboxforumsVariable;
 use websitetoolbox\websitetoolboxforums\models\Settings;
 
 use Craft;
@@ -21,21 +21,21 @@ use craft\web\twig\variables\CraftVariable;
 use yii\base\Event;
 
 /**
- * Class Vanillaforums
+ * Class Websitetoolboxforums
  *
  * @author    websitetoolbox
- * @package   Vanillaforums
+ * @package   Websitetoolboxforums
  * @since     3.0.0
  *
  * @property  SsoService $sso
  */
-class Vanillaforums extends Plugin
+class Websitetoolboxforums extends Plugin
 {
     // Static Properties
     // =========================================================================
 
     /**
-     * @var Vanillaforums
+     * @var Websitetoolboxforums
      */
     public static $plugin;
 
@@ -62,7 +62,7 @@ class Vanillaforums extends Plugin
     {
         parent::init();
         self::$plugin = $this;
-
+            
         self::$craft31 = version_compare(Craft::$app->getVersion(), '3.1', '>=');
 
         Event::on(
@@ -71,7 +71,7 @@ class Vanillaforums extends Plugin
             function (Event $event) {
                 /** @var CraftVariable $variable */
                 $variable = $event->sender;
-                $variable->set('websitetoolboxforums', VanillaforumsVariable::class);
+                $variable->set('websitetoolboxforums', WebsitetoolboxforumsVariable::class);
             }
         );
 
@@ -104,7 +104,6 @@ class Vanillaforums extends Plugin
         // Set up the form controls for editing the connection.
         $hashTypes = hash_algos();
         $hashTypes = array_combine($hashTypes, $hashTypes);
-
         return Craft::$app->view->renderTemplate(
             'websitetoolboxforums/settings',
             [

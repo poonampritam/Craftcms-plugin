@@ -1,25 +1,23 @@
 <?php
 /**
- * websitetoolboxforums plugin for Craft CMS 3.x
+ * Websitetoolboxforums plugin for Craft CMS 3.x
  *
- * test plugin
+ * Single Sign On plugin for WebsitetoolboxForums/jsConnect and CraftCMS
  *
- * @link      http://websitetoolbox.com
- * @copyright Copyright (c) 2020 Website Toolbox
+ * @link      https://websitetoolbox.com/
+ * @copyright Copyright (c) 2019 websitetoolbox
  */
 
 /**
- * websitetoolboxforums en Translation
- *
- * Returns an array with the string to be translated (as passed to `Craft::t('websitetoolboxforums', '...')`) as
- * the key, and the translation as the value.
- *
- * http://www.yiiframework.com/doc-2.0/guide-tutorial-i18n.html
- *
- * @author    Website Toolbox
+ * @author    websitetoolbox
  * @package   Websitetoolboxforums
- * @since     1.0.0
+ * @since     3.0.0
  */
 return [
-    'websitetoolboxforums plugin loaded' => 'websitetoolboxforums plugin loaded',
+    'Enter your Websitetoolbox Forums jsConnect Secret.' => 'Enter your Websitetoolbox Forums jsConnect Secret.',
+    'This is being overridden by the `#{setting}` setting in the `config/#{file}.php` file.' => 'This is being overridden by the `#{setting}` setting in the `config/#{file}.php` file.',
+    'Websitetoolbox Forums jsConnect Secret' => 'Websitetoolbox Forums jsConnect Secret',
+    '{name} plugin loaded' => '{name} plugin loaded',
+    'Enter your Websitetoolbox Forums jsConnect Client ID.' => 'Enter your Websitetoolbox Forums jsConnect Client ID.',
+    'Websitetoolbox Forums jsConnect Client ID' => 'Websitetoolbox Forums jsConnect Client ID'
 ];
