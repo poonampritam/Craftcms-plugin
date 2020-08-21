@@ -53,7 +53,7 @@
     "repositories": [
     {
       "type": "path",
-      "url": "c://xampp2/htdocs/websitetoolboxforums"
+      "url": "c://xampp3/htdocs/websitetoolboxforums"
     }
   ]
 }
