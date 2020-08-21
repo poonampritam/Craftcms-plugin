@@ -26,6 +26,27 @@
 {%- endmacro %}
 {% from _self import configWarning %}
 
+   {{ forms.textField({
+        "label": "Website Login Url"|t("websitetoolboxforums"),
+        "id": "loginUrl",
+        "name": "loginUrl",
+        "value": settings.loginUrl,
+     }) 
+    }}
+       {{ forms.textField({
+        "label": "Website Logout Url"|t("websitetoolboxforums"),
+        "id": "logOutUrl",
+        "name": "logOutUrl",
+        "value": settings.logOutUrl,
+     }) 
+    }}
+       {{ forms.textField({
+        "label": "Website User Registration Url"|t("websitetoolboxforums"),
+        "id": "userRegistrationUrl",
+        "name": "userRegistrationUrl",
+        "value": settings.userRegistrationUrl,
+     }) 
+    }}
     {{ forms.textField({
         "label": "Forum Username"|t("websitetoolboxforums"),
         "id": "forumUsername",

@@ -1,0 +1,56 @@
+<script>
+ function getToken(){
+    var i,x,y,ARRcookies=document.cookie.split(";");
+    for (i=0;i<ARRcookies.length;i++) {
+        x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+        y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+        x=x.replace(/^\s+|\s+$/g,"");
+        if (x=='forumLogoutToken') {
+            var forumToken = y;          
+        }
+    }
+    return forumToken;
+}
+</script><a href="//beta.websitetoolbox.com">
+{% set embeded = craft.app.getProjectConfig.get('plugins.websitetoolboxforums.settings.forumEmbedded')  %} 
+{% if embeded == 1 %}
+    <script>var links = document.getElementsByTagName('a');
+for(var i = 0; i< links.length; i++){
+  var str = links[i].href;
+  for(var j = 0; j< str.length; j++){
+    var res = str.split("."); 
+    if(res[j] == 'websitetoolbox'){ 
+        var linkToChange = links[i];
+        var wtbToken = getToken(); 
+        if(typeof wtbToken != 'undefined' && wtbToken){
+            linkToChange.setAttribute("href", linkToChange+"?authtoken="+wtbToken);
+        }
+    }
+    
+}
+}</script>
+{% else %}
+<script>alert(1)</script>   
+{% endif %}
+ <div id="embedForum"></div>
+<script type="text/javascript">
+    setTimeout(function(){
+        var embedUrl = "//beta.websitetoolbox.com/js/mb/embed.js";
+        var wtbWrap = document.createElement('div');
+        wtbWrap.id = "wtEmbedCode";
+        var embedScript = document.createElement('script');
+        embedScript.id = "embedded_forum";
+        embedScript.type = 'text/javascript';
+        var wtbToken = getToken();
+        if(typeof wtbToken != 'undefined' && wtbToken){
+           embedUrl += "?authtoken="+wtbToken;
+           //wtbx.webAPISSO.setCookie("wtbToken",'','',1);
+        }
+        embedScript.src = embedUrl;
+        wtbWrap.appendChild(embedScript);
+        document.getElementById('embedForum').appendChild(embedScript);
+    }, 50);
+ 
+
+</script> </body>
+</html>
