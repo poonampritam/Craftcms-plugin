@@ -40,8 +40,16 @@ class Settings extends Model
     /**
      * @var string The hash algorithm to be ued when signing requests
      */
-    public $forumEmbedded = '';
-
+    public $forumEmbedded         = '';
+    public $loginUrl              = '';
+    public $logOutUrl             = '';
+    public $userRegistrationUrl   = '';
+   
+    public $forumApiKey           = '';
+    public $forumOutputUrl        = '';
+    public $forumUrl              = '';
+    
+ 
     // Public Methods
     // =========================================================================
 
@@ -51,8 +59,8 @@ class Settings extends Model
     public function rules()
     {
         return [
-            [['forumUsername', 'forumPassword','forumEmbedded'], 'string'],
-            [['forumUsername', 'forumPassword','forumEmbedded'], 'default', 'value' => ''],
+            [['forumUsername', 'forumPassword','forumEmbedded','loginUrl','logOutUrl','userRegistrationUrl','forumOutputUrl','forumUrl','forumApiKey'], 'string'],
+            [['forumUsername', 'forumPassword','forumEmbedded','loginUrl','logOutUrl','userRegistrationUrl','forumOutputUrl','forumUrl','forumApiKey'], 'default', 'value' => ''],
             
         ];
     }
@@ -76,7 +84,15 @@ class Settings extends Model
                 'attributes' => [
                     'forumUsername',
                     'forumPassword',
-                    'forumEmbedded'
+                    'forumEmbedded',
+                    'loginUrl',
+                    'logOutUrl',
+                    'userRegistrationUrl',
+                    'forumOutputUrl',
+                    'forumUrl',
+                    'forumApiKey',
+                    'forumUrl',
+                    'forumApiKey'
                 ],
             ];
         }
