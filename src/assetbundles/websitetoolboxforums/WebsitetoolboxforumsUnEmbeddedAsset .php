@@ -18,7 +18,7 @@ use craft\web\assets\cp\CpAsset;
  * @package   Websitetoolboxforums
  * @since     3.0.0
  */
-class WebsitetoolboxforumsEmbeddedAsset extends AssetBundle
+class WebsitetoolboxforumsUnEmbeddedAsset extends AssetBundle
 {
     // Public Methods
     // =========================================================================
