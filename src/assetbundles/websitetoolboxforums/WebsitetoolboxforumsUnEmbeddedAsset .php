@@ -18,7 +18,7 @@ use craft\web\assets\cp\CpAsset;
  * @package   Websitetoolboxforums
  * @since     3.0.0
  */
-class WebsitetoolboxforumsAsset extends AssetBundle
+class WebsitetoolboxforumsEmbeddedAsset extends AssetBundle
 {
     // Public Methods
     // =========================================================================
@@ -35,7 +35,7 @@ class WebsitetoolboxforumsAsset extends AssetBundle
         ];
 
         $this->js = [
-            'js/WebsitetoolboxforumsUnembedded.js',
+            'js/WebsitetoolboxforumsEmbedded.js',
               
         ];
 
