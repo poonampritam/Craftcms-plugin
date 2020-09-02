@@ -1,20 +1,20 @@
-<?php echo "ccc";exit;
+<?php  
 /**
- * Websitetoolboxforums plugin for Craft CMS 3.x
+ * Website Toolbox Forum plugin for Craft CMS 3.x
  *
- * Single Sign On plugin for WebsitetoolboxForums/jsConnect and CraftCMS
+ * Single Sign On Cloud plugin for CraftCMS
  *
  * @link      https://websitetoolbox.com/
- * @copyright Copyright (c) 2019 websitetoolbox
+ * @copyright Copyright (c) 2019 Website Toolbox
  */
 
 /**
- * Websitetoolboxforums config.php
+ * Website Toolbox Forum config.php
  *
- * This file exists only as a template for the Websitetoolboxforums settings.
+ * This file exists only as a template for the Website Toolbox Forum settings.
  * It does nothing on its own.
  *
- * Don't edit this file, instead copy it to 'craft/config' as 'websitetoolboxforums.php'
+ * Don't edit this file, instead copy it to 'craft/config' as 'websitetoolboxforum.php'
  * and make your changes there to override default settings.
  *
  * Once copied to 'craft/config', this file will be multi-environment aware as
@@ -23,12 +23,16 @@
  */
 
 return [
-    // Websitetoolbox Forums jsConnect Client ID
+    // Websitetoolbox Forums Username
     'forumUsername' => '',
 
-    // Websitetoolbox Forums jsConnect Secret
+    // Websitetoolbox Forums Password
     'forumPassword' => '',
 
-    // The hash algorithm to be ued when signing requests
+    //Embedded Forum or Non-Embedded Forum
     'forumEmbedded' => '',
+	'loginUrl' => '',
+	'logOutUrl' => '',
+	'userRegistrationUrl' => '',
+
 ];
