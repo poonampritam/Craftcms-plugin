@@ -2,7 +2,7 @@
 /**
  * Website Toolbox Forum plugin for Craft CMS 3.x
  *
- * Single Sign On plugin for Website ToolboxForums  and CraftCMS
+ * Single Sign On plugin for CraftCMS
  *
  * @link      https://websitetoolbox.com/
  * @copyright Copyright (c) 2019 websitetoolbox
