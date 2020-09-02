@@ -31,9 +31,9 @@ modules:
       projectConfig: {}
       migrations: []
       plugins:
-        websitetoolboxforums:
-          class: '\websitetoolbox\websitetoolboxforums\Websitetoolboxforums'
-          handle: websitetoolboxforums
+        websitetoolboxforum:
+          class: '\websitetoolbox\websitetoolboxforum\Websitetoolboxforum'
+          handle: websitetoolboxforum
       cleanup: true
       transaction: true
       dbSetup: {clean: true, setupCraft: true}

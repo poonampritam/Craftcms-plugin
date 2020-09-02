@@ -1,5 +1,5 @@
 {
-    "name": "websitetoolbox/websitetoolboxforums",
+    "name": "websitetoolbox/websitetoolboxforum",
     "description": "test plugin123",
     "type": "craft-plugin",
     "version": "1.0.0",
@@ -8,7 +8,7 @@
         "cms",
         "craftcms",
         "craft-plugin",
-        "websitetoolboxforums"
+        "websitetoolboxforum"
     ],
     "support": {
         "docs": "https://www.websitetoolbox.com/documentation1",
@@ -31,21 +31,21 @@
     },
     "autoload": {
         "psr-4": {
-          "websitetoolbox\\websitetoolboxforums\\": "src/"
+          "websitetoolbox\\websitetoolboxforum\\": "src/"
         }
     },
     "extra": {
          "hasCpSettings": true,
-        "name": "websitetoolboxforums",
-        "handle": "websitetoolboxforums",
+        "name": "websitetoolboxforum",
+        "handle": "websitetoolboxforum",
         "developer": "Website Toolbox",
         "hasCpSection": false,
         "developerUrl": "http://websitetoolbox.com",
         "documentationUrl": "https://www.websitetoolbox.com/documentation1",
         "changelogUrl": "https://www.websitetoolbox.com/documentation1",
-        "class": "websitetoolbox\\websitetoolboxforums\\Websitetoolboxforums",
+        "class": "websitetoolbox\\websitetoolboxforum\\Websitetoolboxforum",
         "components": {
-            "sso": "websitetoolbox\\websitetoolboxforums\\services\\Sso"
+            "sso": "websitetoolbox\\websitetoolboxforum\\services\\Sso"
         }
     },
      "minimum-stability": "dev",
@@ -53,7 +53,7 @@
     "repositories": [
     {
       "type": "path",
-      "url": "c://xampp3/htdocs/websitetoolboxforums"
+      "url": "c://xampp3/htdocs/websitetoolboxforum"
     }
   ]
 }
