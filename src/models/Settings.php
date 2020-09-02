@@ -1,16 +1,16 @@
 <?php
 /**
- * Websitetoolboxforums plugin for Craft CMS 3.x
+ * Website Toolbox Forum plugin for Craft CMS 3.x
  *
- * Single Sign On plugin for WebsitetoolboxForums/jsConnect and CraftCMS
+ * Single Sign On Cloud plugin for CraftCMS
  *
  * @link      https://websitetoolbox.com/
- * @copyright Copyright (c) 2019 websitetoolbox
+ * @copyright Copyright (c) 2019 Website Toolbox
  */
 
-namespace websitetoolbox\websitetoolboxforums\models;
+namespace websitetoolbox\websitetoolboxforum\models;
 
-use websitetoolbox\websitetoolboxforums\Websitetoolboxforums;
+use websitetoolbox\websitetoolboxforum\Websitetoolboxforum;
 
 use craft\base\Model;
 use craft\behaviors\EnvAttributeParserBehavior;
@@ -18,8 +18,8 @@ use craft\behaviors\EnvAttributeParserBehavior;
 use yii\behaviors\AttributeTypecastBehavior;
 
 /**
- * @author    websitetoolbox
- * @package   Websitetoolboxforums
+ * @author    Website Toolbox
+ * @package   Websitetoolboxforum
  * @since     3.0.0
  */
 class Settings extends Model
@@ -78,7 +78,7 @@ class Settings extends Model
             // 'attributeTypes' will be composed automatically according to `rules()`
         ];
         // If we're running Craft 3.1 or later, add in the EnvAttributeParserBehavior
-        if (Websitetoolboxforums::$craft31) {
+        if (Websitetoolboxforum::$craft31) {
             $behaviors['parser'] = [
                 'class' => EnvAttributeParserBehavior::class,
                 'attributes' => [
