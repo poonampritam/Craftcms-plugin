@@ -11,7 +11,7 @@
 namespace websitetoolbox\websitetoolboxforum;
 use websitetoolbox\websitetoolboxforum\services\Sso as SsoService;
 use websitetoolbox\websitetoolboxforum\models\Settings;
-use websitetoolbox\websitetoolboxforum\assetbundles\Websitetoolboxforum\WebsitetoolboxforumsAsset;
+use websitetoolbox\websitetoolboxforum\assetbundles\Websitetoolboxforums\WebsitetoolboxforumsAsset;
  
 use Craft;
 use craft\base\Plugin;
