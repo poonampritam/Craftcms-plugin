@@ -47,6 +47,5 @@
         "components": {
             "sso": "websitetoolbox\\websitetoolboxforum\\services\\Sso"
         }
-    },
+    }
      
-}
