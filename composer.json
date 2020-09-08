@@ -47,7 +47,8 @@
         "components": {
             "sso": "websitetoolbox\\websitetoolboxforum\\services\\Sso"
         }
-    }
-     
-     
+    },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+    
 }
